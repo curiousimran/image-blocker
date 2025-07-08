@@ -10,6 +10,18 @@
 - ✅ Lightweight and fast
 - ✅ Built with Manifest V3
 
+## 📸 Screenshots
+
+### Popup UI
+![Popup](screenshots/screenshot1.png)
+
+### Before Image Blocking
+![Before](screenshots/screenshot2.png)
+
+### After Image Blocking
+![After](screenshots/screenshot3.png)
+
+
 ## 📦 Installation
 
 1. Clone the repo:
