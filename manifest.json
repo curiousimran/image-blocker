@@ -1,0 +1,28 @@
+// manifest.json
+{
+  "manifest_version": 3,
+  "name": "Image Blocker",
+  "version": "1.0",
+  "description": "Blocks images (img, picture, background images) on web pages when activated.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
+
